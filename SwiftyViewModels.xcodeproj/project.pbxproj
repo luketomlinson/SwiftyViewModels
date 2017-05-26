@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3E7C8091ED8754A005E3C23 /* KeyboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E7C8071ED8754A005E3C23 /* KeyboardTableViewCell.swift */; };
+		E3E7C80A1ED8754A005E3C23 /* KeyboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E7C8081ED8754A005E3C23 /* KeyboardTableViewCell.xib */; };
+		E3E7C80D1ED87558005E3C23 /* GuitarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E7C80B1ED87558005E3C23 /* GuitarTableViewCell.swift */; };
+		E3E7C80E1ED87558005E3C23 /* GuitarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E7C80C1ED87558005E3C23 /* GuitarTableViewCell.xib */; };
+		E3E7C8111ED87568005E3C23 /* AccessoryItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E7C80F1ED87568005E3C23 /* AccessoryItemTableViewCell.swift */; };
+		E3E7C8121ED87568005E3C23 /* AccessoryItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E7C8101ED87568005E3C23 /* AccessoryItemTableViewCell.xib */; };
+		E3E7C81A1ED87778005E3C23 /* pick.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E7C8141ED87778005E3C23 /* pick.png */; };
+		E3E7C81B1ED87778005E3C23 /* tuner.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E7C8151ED87778005E3C23 /* tuner.png */; };
+		E3E7C81C1ED87778005E3C23 /* acoustic.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E7C8161ED87778005E3C23 /* acoustic.png */; };
+		E3E7C81E1ED87778005E3C23 /* grandPiano.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E3E7C8181ED87778005E3C23 /* grandPiano.jpeg */; };
+		E3E7C81F1ED87778005E3C23 /* keyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = E3E7C8191ED87778005E3C23 /* keyboard.png */; };
+		E3E7C8211ED877AD005E3C23 /* electric.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3E7C8201ED877AD005E3C23 /* electric.jpg */; };
+		E3E7C8231ED87CF8005E3C23 /* UITableView+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E7C8221ED87CF8005E3C23 /* UITableView+Helpers.swift */; };
 		E3EDA86D1ED8627900EE1AE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA86C1ED8627900EE1AE8 /* AppDelegate.swift */; };
 		E3EDA86F1ED8627900EE1AE8 /* InstrumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EDA86E1ED8627900EE1AE8 /* InstrumentViewController.swift */; };
 		E3EDA8721ED8627900EE1AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EDA8701ED8627900EE1AE8 /* Main.storyboard */; };
@@ -18,6 +31,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3E7C8071ED8754A005E3C23 /* KeyboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardTableViewCell.swift; sourceTree = "<group>"; };
+		E3E7C8081ED8754A005E3C23 /* KeyboardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardTableViewCell.xib; sourceTree = "<group>"; };
+		E3E7C80B1ED87558005E3C23 /* GuitarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarTableViewCell.swift; sourceTree = "<group>"; };
+		E3E7C80C1ED87558005E3C23 /* GuitarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuitarTableViewCell.xib; sourceTree = "<group>"; };
+		E3E7C80F1ED87568005E3C23 /* AccessoryItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessoryItemTableViewCell.swift; sourceTree = "<group>"; };
+		E3E7C8101ED87568005E3C23 /* AccessoryItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccessoryItemTableViewCell.xib; sourceTree = "<group>"; };
+		E3E7C8141ED87778005E3C23 /* pick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pick.png; sourceTree = "<group>"; };
+		E3E7C8151ED87778005E3C23 /* tuner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tuner.png; sourceTree = "<group>"; };
+		E3E7C8161ED87778005E3C23 /* acoustic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = acoustic.png; sourceTree = "<group>"; };
+		E3E7C8181ED87778005E3C23 /* grandPiano.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grandPiano.jpeg; sourceTree = "<group>"; };
+		E3E7C8191ED87778005E3C23 /* keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyboard.png; sourceTree = "<group>"; };
+		E3E7C8201ED877AD005E3C23 /* electric.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = electric.jpg; sourceTree = "<group>"; };
+		E3E7C8221ED87CF8005E3C23 /* UITableView+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Helpers.swift"; sourceTree = "<group>"; };
 		E3EDA8691ED8627800EE1AE8 /* SwiftyViewModels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyViewModels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EDA86C1ED8627900EE1AE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3EDA86E1ED8627900EE1AE8 /* InstrumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +67,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3E7C8131ED875A5005E3C23 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E3E7C8071ED8754A005E3C23 /* KeyboardTableViewCell.swift */,
+				E3E7C8081ED8754A005E3C23 /* KeyboardTableViewCell.xib */,
+				E3E7C80B1ED87558005E3C23 /* GuitarTableViewCell.swift */,
+				E3E7C80C1ED87558005E3C23 /* GuitarTableViewCell.xib */,
+				E3E7C80F1ED87568005E3C23 /* AccessoryItemTableViewCell.swift */,
+				E3E7C8101ED87568005E3C23 /* AccessoryItemTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		E3EDA8601ED8627800EE1AE8 = {
 			isa = PBXGroup;
 			children = (
@@ -65,8 +104,16 @@
 				E3EDA8881ED8672000EE1AE8 /* Models.swift */,
 				E3EDA88A1ED86A2300EE1AE8 /* InstrumentViewModel.swift */,
 				E3EDA88C1ED86B3700EE1AE8 /* CellViewModels.swift */,
+				E3E7C8221ED87CF8005E3C23 /* UITableView+Helpers.swift */,
+				E3E7C8131ED875A5005E3C23 /* Cells */,
 				E3EDA8701ED8627900EE1AE8 /* Main.storyboard */,
 				E3EDA8731ED8627900EE1AE8 /* Assets.xcassets */,
+				E3E7C8141ED87778005E3C23 /* pick.png */,
+				E3E7C8151ED87778005E3C23 /* tuner.png */,
+				E3E7C8161ED87778005E3C23 /* acoustic.png */,
+				E3E7C8181ED87778005E3C23 /* grandPiano.jpeg */,
+				E3E7C8201ED877AD005E3C23 /* electric.jpg */,
+				E3E7C8191ED87778005E3C23 /* keyboard.png */,
 				E3EDA8751ED8627900EE1AE8 /* LaunchScreen.storyboard */,
 				E3EDA8781ED8627900EE1AE8 /* Info.plist */,
 			);
@@ -133,9 +180,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E7C81C1ED87778005E3C23 /* acoustic.png in Resources */,
 				E3EDA8771ED8627900EE1AE8 /* LaunchScreen.storyboard in Resources */,
 				E3EDA8741ED8627900EE1AE8 /* Assets.xcassets in Resources */,
+				E3E7C80A1ED8754A005E3C23 /* KeyboardTableViewCell.xib in Resources */,
+				E3E7C81F1ED87778005E3C23 /* keyboard.png in Resources */,
+				E3E7C80E1ED87558005E3C23 /* GuitarTableViewCell.xib in Resources */,
+				E3E7C81A1ED87778005E3C23 /* pick.png in Resources */,
 				E3EDA8721ED8627900EE1AE8 /* Main.storyboard in Resources */,
+				E3E7C8211ED877AD005E3C23 /* electric.jpg in Resources */,
+				E3E7C81E1ED87778005E3C23 /* grandPiano.jpeg in Resources */,
+				E3E7C8121ED87568005E3C23 /* AccessoryItemTableViewCell.xib in Resources */,
+				E3E7C81B1ED87778005E3C23 /* tuner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +204,13 @@
 			files = (
 				E3EDA88D1ED86B3700EE1AE8 /* CellViewModels.swift in Sources */,
 				E3EDA8891ED8672000EE1AE8 /* Models.swift in Sources */,
+				E3E7C8111ED87568005E3C23 /* AccessoryItemTableViewCell.swift in Sources */,
+				E3E7C8231ED87CF8005E3C23 /* UITableView+Helpers.swift in Sources */,
 				E3EDA88B1ED86A2300EE1AE8 /* InstrumentViewModel.swift in Sources */,
 				E3EDA86F1ED8627900EE1AE8 /* InstrumentViewController.swift in Sources */,
+				E3E7C8091ED8754A005E3C23 /* KeyboardTableViewCell.swift in Sources */,
 				E3EDA86D1ED8627900EE1AE8 /* AppDelegate.swift in Sources */,
+				E3E7C80D1ED87558005E3C23 /* GuitarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +376,7 @@
 				E3EDA87D1ED8627900EE1AE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -17,17 +17,18 @@ class InstrumentViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     
-
-    let viewModel = InstrumentViewModel(guitarInventory: guitarInventory, keyBoardInventory: keyBoardInventory, accessoryInventory: accessoryInventory)
-    
+    let viewModel = InstrumentViewModel(guitars: guitarInventory, keyboards: keyBoardInventory, accessories: accessoryInventory)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
+        registerCells()
     }
-
-
+    
+    func registerCells() {
+        tableView.register(cell: GuitarTableViewCell.self)
+        tableView.register(cell: KeyboardTableViewCell.self)
+        tableView.register(cell: AccessoryItemTableViewCell.self)
+    }
 }
 
 extension InstrumentViewController: UITableViewDataSource {
@@ -41,7 +42,17 @@ extension InstrumentViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let cellType = viewModel.cellType(for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellType.reuseIdentifier, for: indexPath)
+
+        viewModel.configureCell(cell, at: indexPath)
+        return cell
+    }
+    
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 128.0
     }
 }
 

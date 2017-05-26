@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="KeyboardTableViewCell" customModule="SwiftyViewModels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="127.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kFL-nr-25a">
+                        <rect key="frame" x="12" y="0.0" width="128" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="128" id="FFK-Ar-0Eb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yk-sj-F24">
+                        <rect key="frame" x="152" y="20" width="106.5" height="27.5"/>
+                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keys Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwM-AY-ili">
+                        <rect key="frame" x="152" y="59.5" width="77" height="20"/>
+                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Synth Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwL-Ma-bQH">
+                        <rect key="frame" x="152" y="91.5" width="83" height="20"/>
+                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kFL-nr-25a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="1WZ-8z-eX7"/>
+                    <constraint firstItem="kFL-nr-25a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4rw-sa-gN4"/>
+                    <constraint firstAttribute="bottom" secondItem="kFL-nr-25a" secondAttribute="bottom" constant="-0.5" id="Al2-6g-KpV"/>
+                    <constraint firstItem="vwM-AY-ili" firstAttribute="top" secondItem="9yk-sj-F24" secondAttribute="bottom" constant="12" id="BMa-eM-axL"/>
+                    <constraint firstItem="UwL-Ma-bQH" firstAttribute="top" secondItem="vwM-AY-ili" secondAttribute="bottom" constant="12" id="Ob4-sR-w4P"/>
+                    <constraint firstItem="9yk-sj-F24" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="S5s-k9-rvv"/>
+                    <constraint firstItem="UwL-Ma-bQH" firstAttribute="leading" secondItem="kFL-nr-25a" secondAttribute="trailing" constant="12" id="TqQ-WV-ydV"/>
+                    <constraint firstItem="9yk-sj-F24" firstAttribute="leading" secondItem="kFL-nr-25a" secondAttribute="trailing" constant="12" id="nIO-XG-XJs"/>
+                    <constraint firstItem="vwM-AY-ili" firstAttribute="leading" secondItem="9yk-sj-F24" secondAttribute="leading" id="nlC-Dn-XAX"/>
+                    <constraint firstItem="vwM-AY-ili" firstAttribute="top" secondItem="9yk-sj-F24" secondAttribute="bottom" constant="12" id="wfu-j0-wh9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="vwM-AY-ili" id="vaa-1W-ndq"/>
+                <outlet property="instrumentImageView" destination="kFL-nr-25a" id="8bN-Dh-tNw"/>
+                <outlet property="synthLabel" destination="UwL-Ma-bQH" id="ALh-zH-RKM"/>
+                <outlet property="titleLabel" destination="9yk-sj-F24" id="dxz-af-n62"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="77"/>
+        </tableViewCell>
+    </objects>
+</document>
