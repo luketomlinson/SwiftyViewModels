@@ -46,7 +46,20 @@ extension InstrumentViewController: UITableViewDataSource {
         let cellType = viewModel.cellType(for: indexPath)
         let cell = tableView.dequeueReusableCell(withIdentifier: cellType.reuseIdentifier, for: indexPath)
 
-        viewModel.configureCell(cell, at: indexPath)
+        let cellViewModel = viewModel.viewModel(for: indexPath)
+        
+        switch (cell, cellViewModel) {
+        case (let cell as GuitarTableViewCell, let cellViewModel as GuitarCellViewModel):
+            cell.configure(with: cellViewModel)
+        case (let cell as KeyboardTableViewCell, let cellViewModel as KeyBoardCellViewModel):
+            cell.configure(with: cellViewModel)
+        case (let cell as AccessoryItemTableViewCell, let cellViewModel as AccessoryViewModel):
+            cell.configure(with: cellViewModel)
+        default:
+            fatalError("Mismatched cell and view model")
+            
+        }
+
         return cell
     }
     

@@ -77,22 +77,5 @@ struct InstrumentViewModel {
         case .accessory:
             return AccessoryItemTableViewCell.self
         }
-    }
-    
-    func configureCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
-        
-        let viewModel = self.viewModel(for: indexPath)
-        
-        switch (cell, viewModel) {
-        case (let cell as GuitarTableViewCell, let viewModel as GuitarCellViewModel):
-            cell.configure(with: viewModel)
-        case (let cell as KeyboardTableViewCell, let viewModel as KeyBoardCellViewModel):
-            cell.configure(with: viewModel)
-        case (let cell as AccessoryItemTableViewCell, let viewModel as AccessoryViewModel):
-            cell.configure(with: viewModel)
-        default:
-            fatalError("Mismatched cell and view model")
-            
-        }
-    }
+    }    
 }
