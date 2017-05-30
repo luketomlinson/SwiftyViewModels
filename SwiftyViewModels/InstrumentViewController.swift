@@ -48,6 +48,19 @@ extension InstrumentViewController: UITableViewDataSource {
 
         let cellViewModel = viewModel.viewModel(for: indexPath)
         
+        configureCell(cell, cellViewModel: cellViewModel)
+        
+        
+        return cell
+    }
+    
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 128.0
+    }
+    
+    func configureCell(_ cell: UITableViewCell, cellViewModel: CellViewModelType) {
+        
         switch (cell, cellViewModel) {
         case (let cell as GuitarTableViewCell, let cellViewModel as GuitarCellViewModel):
             cell.configure(with: cellViewModel)
@@ -60,12 +73,6 @@ extension InstrumentViewController: UITableViewDataSource {
             
         }
 
-        return cell
-    }
-    
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 128.0
     }
 }
 
